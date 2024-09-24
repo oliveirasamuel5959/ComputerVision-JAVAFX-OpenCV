@@ -7,52 +7,68 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
    <children>
-      <ImageView fx:id="maskImageView" fitHeight="237.0" fitWidth="261.0" layoutX="311.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fx:id="originalImageView" fitHeight="237.0" fitWidth="261.0" layoutX="26.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true" />
-      <HBox layoutY="353.0" prefHeight="49.0" prefWidth="600.0" style="-fx-background-color: #e6e2e1;">
+      <ImageView fx:id="maskImageView" fitHeight="237.0" fitWidth="261.0" layoutX="312.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="originalImageView" fitHeight="237.0" fitWidth="261.0" layoutX="27.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true" />
+      <HBox layoutY="353.0" prefHeight="49.0" prefWidth="600.0" style="-fx-background-color: #071859;">
          <children>
-            <Button mnemonicParsing="false" onAction="#loadImage" style="-fx-background-color: #807b7a;" text="Choose Image" textFill="WHITE">
+            <Button mnemonicParsing="false" onAction="#loadImage" prefHeight="27.0" prefWidth="135.0" style="-fx-background-color: #807b7a;" text="Choose Image" textFill="WHITE">
                <opaqueInsets>
                   <Insets />
                </opaqueInsets>
                <HBox.margin>
                   <Insets left="30.0" top="10.0" />
                </HBox.margin>
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
             </Button>
             <Button layoutX="60.0" layoutY="20.0" mnemonicParsing="false" onAction="#applyFilter" style="-fx-background-color: #807b7a;" text="GrayImage" textFill="WHITE">
                <opaqueInsets>
                   <Insets />
                </opaqueInsets>
                <HBox.margin>
-                  <Insets left="100.0" top="10.0" />
+                  <Insets left="50.0" top="10.0" />
                </HBox.margin>
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
             </Button>
             <Button mnemonicParsing="false" onAction="#pixelate" style="-fx-background-color: #807b7a;" text="Pixelate" textFill="WHITE">
                <opaqueInsets>
                   <Insets />
                </opaqueInsets>
                <HBox.margin>
-                  <Insets left="30.0" top="10.0" />
+                  <Insets left="10.0" top="10.0" />
                </HBox.margin>
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
             </Button>
             <Button mnemonicParsing="false" onAction="#resizeImage" style="-fx-background-color: #807b7a;" text="Resize" textFill="WHITE">
                <opaqueInsets>
                   <Insets />
                </opaqueInsets>
                <HBox.margin>
-                  <Insets left="30.0" top="10.0" />
+                  <Insets left="10.0" top="10.0" />
                </HBox.margin>
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
             </Button>
             <Button mnemonicParsing="false" onAction="#applyGaussianBlur" style="-fx-background-color: #807b7a;" text="GaussianBlur" textFill="WHITE">
                <opaqueInsets>
                   <Insets />
                </opaqueInsets>
                <HBox.margin>
-                  <Insets left="30.0" top="10.0" />
+                  <Insets left="10.0" top="10.0" />
                </HBox.margin>
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
             </Button>
          </children>
          <cursor>
@@ -62,7 +78,12 @@
             <Insets top="10.0" />
          </opaqueInsets>
       </HBox>
-      <Label fx:id="label_originalImage" layoutX="83.0" layoutY="268.0" prefHeight="26.0" prefWidth="146.0" />
-      <Label fx:id="label_maskImage" layoutX="368.0" layoutY="268.0" prefHeight="26.0" prefWidth="146.0" />
+      <Label fx:id="label_originalImage" layoutX="85.0" layoutY="314.0" prefHeight="26.0" prefWidth="146.0" />
+      <Label fx:id="label_maskImage" layoutX="370.0" layoutY="314.0" prefHeight="26.0" prefWidth="146.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutY="9.0" prefHeight="36.0" prefWidth="600.0" style="-fx-background-color: #807b7a;" text="Java Image Processing " textAlignment="CENTER">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="25.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

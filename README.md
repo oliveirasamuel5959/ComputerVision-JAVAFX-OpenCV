@@ -1,4 +1,2 @@
-<h1>ComputerVision</h1>
-''''bash
-pip install footbar
-''''
+<h1>Computer Vision Project using JavaFX and BufferedImage Class</h1>
+

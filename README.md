@@ -3,7 +3,7 @@
   BufferedImage Java Class and JavaFX
 </h2>
 
-<h3>The main goal of this project is to apply make a properly image processing
-applying convolution, image enhancement and pixel by pixel change. To understand
+<h3>The main goal of this project is to make a properly image processing.
+Applying convolution, image enhancement and pixel by pixel change. To understand
 how digital images works in the form of matrix and be able to change its pixels values 
 to achieve a desirable result.</h3>
